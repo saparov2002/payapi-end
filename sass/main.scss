@@ -1,0 +1,16 @@
+@import './mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    background-color:  #EDF3F8;
+}
+@import './all-blocks/all-blocks';

@@ -1,0 +1,171 @@
+.box{
+    display: grid;
+    margin-top: 50px;
+    grid-template-areas: 'child-1 child-2 child-3';
+    column-gap: 10px;
+    
+    @include tablet{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        padding: 0 30px;
+    }
+    @include mobile(){
+        flex-direction: column;
+    }
+    &:nth-child(1) {
+        grid-area: child-1;
+        img{
+          padding: 0 100px 25px 130px;
+          @include tablet(){
+            max-height: 88px;
+            margin-bottom: 0px;
+          }
+          @include mobile(){           
+            padding-right: 130px;
+            margin-top: 48px;
+          }
+        }
+        .box__1-description{
+            h4{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: -0.138462px;               
+                color: #36536B; 
+                margin-top: 32px;
+                margin-bottom: 16px;
+                @include tablet(){
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                    letter-spacing: -0.138462px;
+                    margin-top: 0px;
+                    color: #36536B;                    
+                }
+                @include mobile() {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                    letter-spacing: -0.138462px;
+                    
+                    color: #36536B;  
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: -0.115385px;                
+                color: #6C8294; 
+                @include tablet() {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px; 
+                    text-align: center;
+                    letter-spacing: -0.115385px;
+                    color: #6C8294; 
+                    margin-top: 16px;
+                    max-width: 223px;
+                    padding-left: 40px;
+                }
+                @include mobile() {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px; 
+                    text-align: center;
+                    letter-spacing: -0.115385px;                    
+                    color: #6C8294; 
+                    max-width: 328px;
+                }
+            }
+        }
+    }
+    &:nth-child(2) {
+        grid-area: child-2;
+      
+    }
+    &:nth-child(3) {
+        grid-area: child-3;
+    }
+}
+.input{
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet() {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    @include mobile() {
+        
+    }
+    
+    h3{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;       
+        color: #36536B;
+        display: inline-block; 
+        @include mobile(){
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: -0.246154px;  
+            color: #36536B; 
+        }
+        
+    }
+    
+}
+.form {
+    display: inline-block;
+    position: relative;
+    
+    &__emaile{
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px; 
+        border: none;
+        padding: 16px 265px 14px 27px;
+        @include mobile() {
+            background: #FBFCFE;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            padding: 16px 158px 14px 27px; 
+        }
+    }
+}
+.btn-input{
+    background: #BA4270;
+    border-radius: 24px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px; 
+    letter-spacing: -0.115385px;   
+    color: #FBFCFE; 
+    padding: 16px 24px 14px 26px; 
+    position: absolute;
+    top: -0.001;
+    right: 0px;
+    @include mobile() {
+        padding: 16px 168px 14px 56px; 
+        top: 60px; 
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.115385px;    
+        color: #FBFCFE;
+        
+           
+    }
+}

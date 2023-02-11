@@ -1,0 +1,123 @@
+.easy-wrapper{
+     display: flex;
+     align-items: center;
+     @include tablet() {
+        flex-direction: column;
+        img{
+            max-width: 328px;
+         }
+     }
+     
+     
+}
+.easy-right{
+    h4{
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;    
+        color: #36536B; 
+        @include mobile () {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px; 
+            text-align: center;
+            letter-spacing: -0.276923px;         
+            color: #36536B; 
+        }
+        
+    }
+    p{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        max-width: 445px;  
+        color: #6C8294; 
+        padding-top: 24px;
+        @include mobile() {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px; 
+            text-align: center;          
+            color: #6C8294; 
+        }
+    }
+}
+.simple{
+    margin-left: 60px;
+    @include centeritem();
+    @include tablet() {
+        flex-direction: column;
+    }
+    &__left{
+        column-gap: 97px;
+        h3{
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;   
+            letter-spacing: -0.369231px;   
+            color: #36536B;
+            @include tablet(){
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 56px;
+                transform: translateX(-15px);
+                letter-spacing: -0.369231px;
+                color: #36536B; 
+                margin-top: 28px;
+            }
+            @include mobile() {
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: -0.276923px;  
+                color: #36536B; 
+                margin-top: -20px;
+            }
+         
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: #6C8294; 
+            margin-top: 24px;
+            max-width: 445px;
+            @include tablet() {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px; 
+                text-align: center;             
+                color: #6C8294;
+                transform: translateX(-15px);
+            }
+            @include mobile() {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                text-align: center;               
+                color: #6C8294; 
+            }
+        }
+                
+    }
+    &__right{
+        @include tablet() {
+            order: -1;
+
+        }
+        img{
+            @include tablet() {
+                max-width: 363px;
+                margin: 100px 200px 45px 100px;
+            }
+            @include mobile() {
+                max-width: 328px;
+                margin-top: 80px;
+                margin: 0 auto;
+            }
+           
+        }
+    }
+}
